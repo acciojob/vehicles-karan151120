@@ -7,6 +7,7 @@ public class F1 extends Car {
         super(name,4,2,6,isManual,"race",2);
 
         this.isManual = isManual;
+        if(!isManual) setGears(1);
     }
 
     public void accelerate(int rate){
